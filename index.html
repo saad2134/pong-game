@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Advanced Pong Game</h1>
+    <div id="controls-bar">
+        <button id="mode-btn">Switch to 2 Player Mode</button>
+        <button id="theme-btn">Switch to Light Theme</button>
+        <button id="settings-btn">Game Settings ⚙️</button>
+    </div>
+    <div id="scoreboard-container">
+        <span id="player-score">0</span>
+        <span class="score-divider">|</span>
+        <span id="ai-score">0</span>
+    </div>
+    <canvas id="pong" width="800" height="500"></canvas>
+    <div id="message"></div>
+    <button id="restart-btn" style="display:none;">Restart Game</button>
+
+    <!-- Game Settings Modal -->
+    <div id="settings-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>Game Settings</h2>
+        <label>Winning Score:
+          <input type="number" id="win-score-input" min="1" max="20" value="5"/>
+        </label>
+        <label>Ball Speed:
+          <input type="range" id="ball-speed-input" min="3" max="15" value="6"/>
+          <span id="ball-speed-label">6</span>
+        </label>
+        <label>
+          <input type="checkbox" id="sound-toggle" checked />
+          Enable Sound
+        </label>
+        <label>
+          <input type="checkbox" id="powerup-toggle" checked />
+          Enable Powerups
+        </label>
+        <button id="apply-settings-btn">Apply</button>
+      </div>
+    </div>
+
+    <audio id="sound-paddle" src="https://cdn.pixabay.com/audio/2022/07/26/audio_123rf1.mp3"></audio>
+    <audio id="sound-wall" src="https://cdn.pixabay.com/audio/2022/07/26/audio_123rf2.mp3"></audio>
+    <audio id="sound-score" src="https://cdn.pixabay.com/audio/2022/07/26/audio_123rf3.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
