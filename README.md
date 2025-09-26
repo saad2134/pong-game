@@ -57,7 +57,7 @@ A minimalist recreation of the classic Pong game, built using HTML5, CSS, and Ja
 
 ## 📸 Screenshots
 
-![Gameplay Screenshot](<img width="1920" height="1014" alt="image" src="https://github.com/user-attachments/assets/39593c36-cea9-4dbf-8311-c493906fb2f5" />)
+<img width="1920" height="1014" alt="Gameplay Screenshot" src="https://github.com/user-attachments/assets/39593c36-cea9-4dbf-8311-c493906fb2f5" />
 
 
 
